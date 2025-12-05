@@ -90,12 +90,12 @@ function showToast(text, targetElement) {
       return;
     }
   
-    // tel
-    if (href.startsWith("tel:")) {
+  // tel / callto
+  if (/^(tel:|callto:)/i.test(href)) {
       event.preventDefault();
   
-      const decoded = decodeURIComponent(href); // handles %20 etc
-      const raw = decoded.slice(4); // strip "tel:"
+    const decoded = decodeURIComponent(href); // handles %20 etc
+    const raw = decoded.replace(/^(tel:|callto:)/i, ""); // strip scheme
   
       const chars = raw.match(/[+\d]/g);
       const phone = chars ? chars.join("") : "";
