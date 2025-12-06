@@ -1,1 +1,39 @@
 .DS_Store
+Thumbs.db
+
+# Editor/project files
+.vscode/
+.idea/
+*.iml
+.cursor/
+.cursorignore
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Node (in case tooling is added later)
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Build artifacts
+dist/
+build/
+coverage/
+
+# Chrome extension bundles/keys
+*.crx
+*.pem
+*.zip
+
+# Environment files
+.env
+.env.*
+
+# Local assets and screenshots
+assets/
