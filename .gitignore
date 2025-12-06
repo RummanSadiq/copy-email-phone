@@ -15,7 +15,7 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# Node (in case tooling is added later)
+# Node
 node_modules/
 package-lock.json
 yarn.lock
