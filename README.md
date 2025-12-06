@@ -38,10 +38,13 @@ Includes a native-style toast notification near the element, with clean animatio
 ### Code Structure
 ```
 
-manifest.json     → Chrome extension settings
-content.js        → Core logic & toasts
-icons/            → Extension icons
-LICENSE           → MIT License
+manifest.json            → Chrome extension settings (MV3)
+scripts/hover-style.js   → Injects hover style; tags mailto/tel links
+scripts/toast.js         → Toast notification utility
+scripts/copy-logic.js    → Handles click-to-copy for mailto/tel
+scripts/content-main.js  → Wires event listeners and bootstraps logic
+icons/                   → Extension icons
+LICENSE                  → MIT License
 
 ```
 
@@ -49,4 +52,3 @@ LICENSE           → MIT License
 
 ### License
 MIT License.
-```
