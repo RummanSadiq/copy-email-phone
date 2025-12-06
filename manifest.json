@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Copy Email & Phone",
-  "version": "1.0.2",
+  "version": "1.1",
   "description": "Copy email and phone links directly to clipboard with a smooth native toast.",
   "content_scripts": [
     {
