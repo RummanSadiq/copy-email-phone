@@ -23,8 +23,7 @@ async function handleCopyClick(event) {
   
     const href = link.getAttribute("href") || "";
   
-    // mailto
-    if (href.startsWith("mailto:")) {
+    if (/^mailto:/i.test(href)) {
       event.preventDefault();
       if (typeof event.stopImmediatePropagation === "function") event.stopImmediatePropagation();
       if (typeof event.stopPropagation === "function") event.stopPropagation();
